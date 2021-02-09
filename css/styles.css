@@ -46,21 +46,20 @@ body{
   font-family: "Arial";
   color: rgb( 255, 255, 255 );
   line-height: 1.488;
-  text-align: center;
+  display:flex;
   align-content: center;
   justify-content: center;
   
 }
 
-
 .header-nav a {
-  float: left;
-  display: block;
+  
+  white-space: nowrap;
   color: rgb( 255, 255, 255 );
   text-align: center;
   padding: 12px 35px;
   border-right: 1px solid rgb( 235, 80, 23 );
-
+  
   text-decoration: none;
 }
 
