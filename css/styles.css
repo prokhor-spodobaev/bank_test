@@ -1,0 +1,42 @@
+  
+  h1 {
+      color :aquamarine;
+  }
+  
+  .site-header {
+    position: absolute;
+    left: 0px;
+    top: 12px;
+    width: 1002px;
+    height: 86px;
+    z-index: 48;
+  }
+  .phone-numbers {
+    font-size: 18px;
+    font-family: "Europe";
+    color: rgb( 235, 80, 23 );
+    line-height: 1.111;
+    text-align: left;
+    position: absolute;
+    left: 824.769px;
+    top: 25.354px;
+    width: 177px;
+    height: 36px;
+    z-index: 47;
+  }
+  .Слой_2 {
+    background-image: url("images/Слой 2.png");
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 230px;
+    height: 86px;
+    z-index: 46;
+  }
+  
+  #footer {
+    position : absolute;
+    bottom : 0;
+    height : 40px;
+    margin-top : 40px;
+  }
