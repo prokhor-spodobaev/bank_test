@@ -1,42 +1,108 @@
+html, body{
+  height: 100%;
+  margin: 0;
+}
+
+body{
+  display: flex;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  width: 1008px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-top: 12px;
+  margin-bottom: 15px;
+  flex: 0 0 auto;
+}
+
+.header-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 21px;
+}
+
+.phone-numbers {
+  display : flex;
+  flex-direction: column;
+  font-size: 18px;
+  font-family: "Europe";
+  color: rgb( 235, 80, 23 );
+  line-height: 1.111;
+  text-align: left;
+}
+
+
+.header-nav {
+  overflow: hidden;
+  background-color: rgb( 35, 31, 32 );
+  padding-left: 27px;
+  font-size: 14px;
+  font-family: "Arial";
+  color: rgb( 255, 255, 255 );
+  line-height: 1.488;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
   
-  h1 {
-      color :aquamarine;
-  }
+}
+
+
+.header-nav a {
+  float: left;
+  display: block;
+  color: rgb( 255, 255, 255 );
+  text-align: center;
+  padding: 12px 35px;
+  border-right: 1px solid rgb( 235, 80, 23 );
+
+  text-decoration: none;
+}
+
+.header-nav a:last-child {
+  border-right: initial;
+}
+
+
+.header-nav a:hover {
+  background-color: rgb( 235, 80, 23 );
+}
+
+.main{
+  flex: 1 0 auto;
+}
+
+.calc-block{
+  background-color: rgb( 234, 239, 243 );
+  opacity: 0.4;
   
-  .site-header {
-    position: absolute;
-    left: 0px;
-    top: 12px;
-    width: 1002px;
-    height: 86px;
-    z-index: 48;
-  }
-  .phone-numbers {
-    font-size: 18px;
-    font-family: "Europe";
-    color: rgb( 235, 80, 23 );
-    line-height: 1.111;
-    text-align: left;
-    position: absolute;
-    left: 824.769px;
-    top: 25.354px;
-    width: 177px;
-    height: 36px;
-    z-index: 47;
-  }
-  .Слой_2 {
-    background-image: url("images/Слой 2.png");
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 230px;
-    height: 86px;
-    z-index: 46;
-  }
+  max-width: 652px;
+  margin-left: 30px;
+  height: 378px;
+}
+
+.footer {
+  flex: 0 0 auto;
+  height: 61px;
+  margin-top : 61px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb( 224, 224, 224 );
+  background-color: rgb( 35, 31, 32 );
+  padding: 12px 0 0 61px;
+}
+
+.footer-text {
+  font-size: 12px;
+  font-family: "Arial";
+  color: rgb( 255, 255, 255 );
+  line-height: 1.736;
+  text-align: left;
+  padding-left: 26px;
+}
   
-  #footer {
-    position : absolute;
-    bottom : 0;
-    height : 40px;
-    margin-top : 40px;
-  }
