@@ -151,6 +151,10 @@ body{
   text-align: end;
 }
 
+.calc-block-row-input{
+  display: flex;
+}
+
 .calc-input-text{
   border: 1px solid rgb( 168,172,173);
   border-radius: 0;
@@ -179,6 +183,39 @@ select.calc-input-text {
 .date-placeholder-style:focus:-moz-placeholder           {color: transparent}
 .date-placeholder-style:focus:-ms-input-placeholder      {color: transparent}
 
+.ui-datepicker{ z-index: 9999 !important;}
+
+.slider-container{
+
+  margin-left: 18px;
+}
+
+.slider{
+  width: 240px;
+}
+
+.slider-captions{
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  font-family: "Verdana";
+  color: rgb( 103, 103, 103 );
+  font-style: italic;
+}
+
+
+
+.radio{
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 9px;
+  margin-left: 0;
+
+}
+
+.radio-label{
+  margin-right:20px;
+}
 
 
 .footer {

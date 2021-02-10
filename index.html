@@ -8,6 +8,7 @@
   <meta name="description" content="Описание страницы" />
 
   <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/black-tie/jquery-ui.min.css" />
 
 </head>
 
@@ -50,15 +51,23 @@
           <div class="calc-block-row-caption">Дата оформления вклада</div>
           <div class="calc-block-row-input">
             <input class="calc-input-text date-placeholder-style" type="text" id="date" placeholder="дд.мм.гггг"
-            maxlength="10">
+              maxlength="10">
           </div>
         </div>
 
         <div class="calc-block-row">
           <div class="calc-block-row-caption">Сумма вклада</div>
           <div class="calc-block-row-input">
-            <input class="calc-input-text" type="text" id="deposit_sum" value=10000 
-            minlength="4" maxlength="7">
+            <input class="calc-input-text" type="text" id="deposit_sum" value=10000 minlength="4" maxlength="7">
+
+            <div class="slider-container">
+              <div class="slider" id="deposit_sum_slider"></div>
+              <div class="slider-captions">
+                <div>1 тыс. руб.</div>
+                <div>3 000 000</div>
+              </div>
+            </div>
+
           </div>
         </div>
 
@@ -78,11 +87,11 @@
         <div class="calc-block-row">
           <div class="calc-block-row-caption">Пополнение вклада</div>
           <div class="calc-block-row-input">
-            <input type="radio" id="radioNo" name="replenishment_radio" value="no" checked>
-            <label for="radioNo">Нет</label>
+            <input type="radio" class="radio" name="radio" id="radioNo" value="no" checked>
+            <label for="radioNo" class="radio-label">Нет</label>
 
-            <input type="radio" id="radioYes" name="replenishment_radio" value="yes">
-            <label for="radioYes">Да</label>
+            <input type="radio" class="radio" name="radio" id="radioYes" value="yes">
+            <label for="radioYes" class="radio-label">Да</label>
 
           </div>
         </div>
@@ -90,8 +99,16 @@
         <div class="calc-block-row">
           <div class="calc-block-row-caption">Сумма пополнения вклада</div>
           <div class="calc-block-row-input">
-            <input class="calc-input-text" type="text" id="replenishment_sum" value=10000
-            minlength="4" maxlength="7">
+            <input class="calc-input-text" type="text" id="replenishment_sum" value=10000 minlength="4" maxlength="7">
+
+            <div class="slider-container">
+              <div class="slider" id="replenishment_sum_slider"></div>
+              <div class="slider-captions">
+                <div>1 тыс. руб.</div>
+                <div>3 000 000</div>
+              </div>
+            </div>
+
           </div>
         </div>
 
@@ -119,6 +136,7 @@
 
 
   <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
   <script type="text/javascript" src="scripts/scripts.js"></script>
 
 </body>
