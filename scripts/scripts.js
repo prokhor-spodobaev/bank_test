@@ -9,9 +9,6 @@ function forceMinMax(obj, min, max){
 
 $('body').on('propertychange input', 'input[type="text"]', forceNumeric);
 
-// $("#date").change('input', function(e){
-//     $('#date').mask('00.00.0000');
-// });
 
 
 $("#date").keyup(function(event) {
