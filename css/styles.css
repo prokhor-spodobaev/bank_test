@@ -118,13 +118,72 @@ body{
 }
 
 .calc-block{
-  background-color: rgb( 234, 239, 243 );
-  opacity: 0.4;
+  background-color: rgb( 234, 239, 243, 0.4 );
+
   
   max-width: 652px;
   margin-left: 30px;
   height: 378px;
 }
+
+.calc-block h1{
+  font-size: 30px;
+  font-family: "Arial";
+  font-weight: 400;
+  color: rgb( 235, 80, 23 );
+  line-height: 1.067;
+  text-align: left;
+  padding-left: 98px;
+  padding-top: 19px;
+  padding-bottom: 29px;
+  margin: 0;
+}
+
+.calc-block-row{
+  display: flex;
+  font-size: 14px;
+  font-family: "Arial";
+  color: rgb( 0, 0, 0 );
+  line-height: 2;
+  margin-bottom: 21px;
+}
+
+.calc-block-row-caption{
+  margin-right: 31px;
+  width: 193px;
+  text-align: end;
+}
+
+.calc-input-text{
+  border: 1px solid rgb( 168,172,173);
+  border-radius: 0;
+  box-sizing: border-box;
+  box-shadow:inset -1px -3px 3px -3px rgba(0,0,0,0.41);
+  outline: none;
+  padding: 7px;
+  height: 23px;
+  width: 88px;
+}
+
+select.calc-input-text {
+  
+  padding: 0;
+  padding-left: 5px;
+}
+
+
+.date-placeholder-style::-webkit-input-placeholder {color: rgb( 0, 0, 0 );}
+.date-placeholder-style::-moz-placeholder          {color: rgb( 0, 0, 0 );}/* Firefox 19+ */
+.date-placeholder-style:-moz-placeholder           {color: rgb( 0, 0, 0 );}/* Firefox 18- */
+.date-placeholder-style:-ms-input-placeholder      {color: rgb( 0, 0, 0 );}
+
+
+.date-placeholder-style:focus::-webkit-input-placeholder {color: transparent}
+.date-placeholder-style:focus::-moz-placeholder          {color: transparent}
+.date-placeholder-style:focus:-moz-placeholder           {color: transparent}
+.date-placeholder-style:focus:-ms-input-placeholder      {color: transparent}
+
+
 
 .footer {
   flex: 0 0 auto;

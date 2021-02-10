@@ -8,7 +8,6 @@
   <meta name="description" content="Описание страницы" />
 
   <link rel="stylesheet" type="text/css" href="css/styles.css" />
-  <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
 
 </head>
 
@@ -38,17 +37,66 @@
 
     <main class="main">
       <ul class="breadcrumbs">
-         <li><a href="#">Главная</a></li>
-         <li><a href="#">Вклады</a></li>
-         <li>Калькулятор</li>
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Вклады</a></li>
+        <li>Калькулятор</li>
       </ul>
 
-      <div class="calc-block">
+      <form class="calc-block">
 
-        <h1>Заголовок страницы</h1>
-        Основная часть
+        <h1>Калькулятор</h1>
 
-      </div>
+        <div class="calc-block-row">
+          <div class="calc-block-row-caption">Дата оформления вклада</div>
+          <div class="calc-block-row-input">
+            <input class="calc-input-text date-placeholder-style" type="text" id="date" placeholder="дд.мм.гггг"
+            maxlength="10">
+          </div>
+        </div>
+
+        <div class="calc-block-row">
+          <div class="calc-block-row-caption">Сумма вклада</div>
+          <div class="calc-block-row-input">
+            <input class="calc-input-text" type="text" id="deposit_sum" value=10000 
+            minlength="4" maxlength="7">
+          </div>
+        </div>
+
+        <div class="calc-block-row">
+          <div class="calc-block-row-caption">Срок вклада</div>
+          <div class="calc-block-row-input">
+            <select class="calc-input-text" id="years" name="years">
+              <option value=1>1 год</option>
+              <option value=2>2 года</option>
+              <option value=3>3 года</option>
+              <option value=4>4 года</option>
+              <option value=3>5 лет</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="calc-block-row">
+          <div class="calc-block-row-caption">Пополнение вклада</div>
+          <div class="calc-block-row-input">
+            <input type="radio" id="radioNo" name="replenishment_radio" value="no" checked>
+            <label for="radioNo">Нет</label>
+
+            <input type="radio" id="radioYes" name="replenishment_radio" value="yes">
+            <label for="radioYes">Да</label>
+
+          </div>
+        </div>
+
+        <div class="calc-block-row">
+          <div class="calc-block-row-caption">Сумма пополнения вклада</div>
+          <div class="calc-block-row-input">
+            <input class="calc-input-text" type="text" id="replenishment_sum" value=10000
+            minlength="4" maxlength="7">
+          </div>
+        </div>
+
+
+      </form>
     </main>
 
 
@@ -67,6 +115,12 @@
     </footer>
 
   </div>
+
+
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script type="text/javascript" src="scripts/scripts.js"></script>
+
 </body>
 
 </html>
