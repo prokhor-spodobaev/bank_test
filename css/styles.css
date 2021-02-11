@@ -142,7 +142,7 @@ body{
   font-family: "Arial";
   color: rgb( 0, 0, 0 );
   line-height: 2;
-  margin-bottom: 21px;
+  margin-bottom: 15px;
 }
 
 .calc-block-row-caption{
@@ -186,7 +186,7 @@ select.calc-input-text {
 .ui-datepicker{ z-index: 9999 !important;}
 
 .slider-container{
-
+  margin-top: 3px;
   margin-left: 18px;
 }
 
@@ -216,6 +216,62 @@ select.calc-input-text {
 .radio-label{
   margin-right:20px;
 }
+
+
+.calc-bottom-row{
+  display:flex;
+  margin-top: 9px;
+  margin-left: 20px;
+  margin-bottom: 30px;
+
+  line-height: 2;
+}
+
+.calc-button{
+  font-size: 12px;
+  font-family: "Arial";
+  color: rgb( 57, 83, 6 );
+  font-weight: bold;
+
+  outline: none;
+
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb( 195, 196, 196 );
+  border-radius: 7px;
+  background-image: -moz-linear-gradient( 90deg, rgb( 124, 196, 0 ) 0%, rgb( 175, 243, 0 ) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb( 124, 196, 0 ) 0%, rgb( 175, 243, 0 ) 100%);
+  box-shadow: 1px 1.732px 5px 0px rgb( 0, 0, 0 );
+  width: 98px;
+  height: 31px;
+}
+
+.calc-button:hover{
+  background-image: -moz-linear-gradient( 90deg, rgb(118, 177, 0) 0%, rgb( 175, 243, 0 ) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(118, 177, 0) 0%, rgb( 175, 243, 0 ) 100%);
+}
+
+.calc-button:active{
+  background-image: -moz-linear-gradient( 90deg,  rgb( 175, 243, 0 ) 100%, rgb( 124, 196, 0 ) 0%);
+  background-image: -webkit-linear-gradient( 90deg, rgb( 175, 243, 0 ) 100%, rgb( 124, 196, 0 ) 0%);
+}
+
+.result-caption{
+  font-size: 14px;
+  font-family: "Arial";
+  color: rgb( 57, 83, 6 );
+  font-weight: bold;
+
+  margin-left: 25px;
+}
+
+.result{
+  font-size: 14px;
+  font-family: "Arial";
+  margin-left: 6px;
+}
+
+
 
 
 .footer {

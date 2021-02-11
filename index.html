@@ -58,7 +58,7 @@
         <div class="calc-block-row">
           <div class="calc-block-row-caption">Сумма вклада</div>
           <div class="calc-block-row-input">
-            <input class="calc-input-text" type="text" id="deposit_sum" value=10000 minlength="4" maxlength="7">
+            <input class="calc-input-text" type="text" id="deposit_sum" value=10000 minlength="5" maxlength="9">
 
             <div class="slider-container">
               <div class="slider" id="deposit_sum_slider"></div>
@@ -79,19 +79,20 @@
               <option value=2>2 года</option>
               <option value=3>3 года</option>
               <option value=4>4 года</option>
-              <option value=3>5 лет</option>
+              <option value=5>5 лет</option>
             </select>
           </div>
         </div>
 
         <div class="calc-block-row">
           <div class="calc-block-row-caption">Пополнение вклада</div>
-          <div class="calc-block-row-input">
-            <input type="radio" class="radio" name="radio" id="radioNo" value="no" checked>
-            <label for="radioNo" class="radio-label">Нет</label>
+          <div class="calc-block-row-input" id="radioForm">
 
-            <input type="radio" class="radio" name="radio" id="radioYes" value="yes">
-            <label for="radioYes" class="radio-label">Да</label>
+              <input type="radio" class="radio" name="radio" id="radioNo" value="0" checked>
+              <label for="radioNo" class="radio-label">Нет</label>
+
+              <input type="radio" class="radio" name="radio" id="radioYes" value="1">
+              <label for="radioYes" class="radio-label">Да</label>
 
           </div>
         </div>
@@ -99,7 +100,7 @@
         <div class="calc-block-row">
           <div class="calc-block-row-caption">Сумма пополнения вклада</div>
           <div class="calc-block-row-input">
-            <input class="calc-input-text" type="text" id="replenishment_sum" value=10000 minlength="4" maxlength="7">
+            <input class="calc-input-text" type="text" id="replenishment_sum" value=10000 minlength="5" maxlength="9">
 
             <div class="slider-container">
               <div class="slider" id="replenishment_sum_slider"></div>
@@ -113,9 +114,16 @@
         </div>
 
 
+        <div class="calc-bottom-row">
+          <input type="button" class="calc-button" id="calcButton" value="Рассчитать">
+
+          <div class="result-caption">Результат:</div>
+          <div class="result" id="resultField">0 руб.</div>
+
+        </div>
+
       </form>
     </main>
-
 
 
     <footer class="footer">
@@ -134,8 +142,7 @@
   </div>
 
 
-
-  <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
   <script type="text/javascript" src="scripts/scripts.js"></script>
 
